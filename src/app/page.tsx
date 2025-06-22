@@ -12,8 +12,8 @@ export default function Home() {
   ];
   return (
     <main className="flex justify-center items-center w-full">
-      <section className="container md:pl-context-padding flex flex-col-reverse md:flex-row">
-        <Card className="flex flex-col w-full md:w-hero-content items-start gap-8 md:gap-20 border-0 bg-transparent mt-14 z-10">
+      <section className="container md:pl-context-padding p-5 flex flex-col-reverse md:flex-row">
+        <Card className="flex flex-col w-full md:w-hero-content items-start gap-8 md:gap-20 border-0 bg-transparent mt-14 z-10 p-0">
           <CardContent className="flex flex-col items-start gap-6 md:gap-8 self-stretch w-full p-0">
             <section className="flex flex-col items-start gap-4 self-stretch w-full ">
               <div className="flex flex-col items-start relative self-stretch w-full ">
@@ -42,36 +42,38 @@ export default function Home() {
               </ul>
             </section>
 
-            <div className="flex flex-col w-full md:w-[313px] items-start gap-2.5 ">
-              <Button className="flex items-center justify-center gap-2.5 px-8 md:px-10 py-3 md:py-2 relative self-stretch w-full  bg-top-bar-red rounded-[10px] shadow-[2px_2px_10px_#00e7f9] hover:bg-[#e0004a] transition-colors">
-                <span className="relative w-fit font-figtree font-bold text-white text-lg md:text-xl tracking-[0] leading-[normal] whitespace-nowrap">
-                  GET STARTED
-                </span>
-                <Image
-                  src={arrowRight}
-                  alt="arrowRight"
-                  className="relative w-4 h-4 md:w-2 md:h-[13px]"
-                />
-              </Button>
-              <p className="relative self-stretch font-figtree font-normal text-white text-xs text-center tracking-[0] leading-4">
-                1-minute quiz for personalized Insights
-              </p>
-            </div>
+            <section className="flex flex-col-reverse md:flex-col  items-start gap-4 self-stretch w-full ">
+              <div className="flex flex-col w-full md:w-[313px] items-start gap-2.5 ">
+                <Button className="flex items-center justify-center gap-2.5 px-8 md:px-10 py-3 md:py-2 relative self-stretch w-full  bg-top-bar-red rounded-[10px] shadow-[2px_2px_10px_#00e7f9] hover:bg-[#e0004a] transition-colors">
+                  <span className="relative w-fit font-figtree font-bold text-white text-lg md:text-xl tracking-[0] leading-[normal] whitespace-nowrap">
+                    GET STARTED
+                  </span>
+                  <Image
+                    src={arrowRight}
+                    alt="arrowRight"
+                    className="relative w-4 h-4 md:w-2 md:h-[13px]"
+                  />
+                </Button>
+                <p className="relative self-stretch font-figtree font-normal text-white text-xs text-center tracking-[0] leading-4">
+                  1-minute quiz for personalized Insights
+                </p>
+              </div>
 
-            <div className="flex flex-col items-center justify-center gap-3 relative self-stretch w-full ">
-              <p className="relative self-stretch mt-[-1.00px] font-figtree font-medium text-[#aaaaaa] text-xs tracking-[0] leading-[normal] text-start">
-                By clicking "Get Started", you agree with Terms and Conditions,
-                Privacy Policy, Subscription Terms
-              </p>
-              <p className="relative self-stretch font-figtree font-medium text-[#aaaaaa] text-[10px] tracking-[0] leading-[normal] text-start">
-                Fametonic 2025 ©All Rights Reserved.
-              </p>
-            </div>
+              <div className="flex flex-col items-center justify-center gap-3 relative self-stretch w-full ">
+                <p className="relative self-stretch mt-[-1.00px] font-figtree font-medium text-[#aaaaaa] text-xs tracking-[0] leading-[normal] text-center md:text-start">
+                  By clicking "Get Started", you agree with Terms and
+                  Conditions, Privacy Policy, Subscription Terms
+                </p>
+                <p className="relative self-stretch font-figtree font-medium text-[#aaaaaa] text-[10px] tracking-[0] leading-[normal] md:text-start text-center">
+                  Fametonic 2025 ©All Rights Reserved.
+                </p>
+              </div>
+            </section>
           </CardContent>
         </Card>
 
         <div className="relative ">
-          <div className=" md:absolute md:w-[660px] md:h-[750px] md:-left-[60px] md:-top-8    ">
+          <div className=" md:absolute md:w-[660px] md:h-[700px] md:-left-[60px] md:-top-8    ">
             <Image
               className=" w-full h-full object-contain md:object-cover"
               alt="hero image"
