@@ -4,6 +4,8 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+  --spacing-context-padding: 135px;
+  --text-top-bar-size: 22px;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-urbanist-sans);
@@ -15,6 +17,9 @@
   --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
   --color-sidebar-primary: var(--sidebar-primary);
   --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-aqua: var(--aqua);
+  --color-top-bar-red: var(--top-bar-red);
+  --color-top-bar-aqua: var(--top-bar-aqua);
   --color-sidebar: var(--sidebar);
   --color-chart-5: var(--chart-5);
   --color-chart-4: var(--chart-4);
@@ -59,6 +64,9 @@
   --muted-foreground: oklch(0.556 0 0);
   --accent: oklch(0.97 0 0);
   --accent-foreground: oklch(0.205 0 0);
+  --aqua: oklch(0.8466 0.1445 204.83);
+  --top-bar-red: oklch(0.6287 0.251662 17.0865);
+  --top-bar-aqua: oklch(0.771 0.131 208.11);
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);

@@ -11,12 +11,10 @@ export default function Home() {
     "Learn from expert-led courses designed for aspiring influencers",
   ];
   return (
-    <main>
-      <div className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-between px-4 md:px-[215px] py-8 md:py-[131px] gap-8 md:gap-0">
-        {/* Main content section */}
-        <Card className="flex flex-col w-full md:w-[516px] items-start gap-8 md:gap-20 border-0 bg-transparent order-2 md:order-1">
+    <main className="flex justify-center items-center w-full">
+      <section className="container pl-context-padding flex">
+        <Card className="flex flex-col w-full md:w-[516px] items-start gap-8 md:gap-20 border-0 bg-transparent   mt-14 z-10">
           <CardContent className="flex flex-col items-start gap-6 md:gap-[30px] relative self-stretch w-full flex-[0_0_auto] p-0">
-            {/* Headline section */}
             <div className="flex flex-col items-start gap-4 relative self-stretch w-full flex-[0_0_auto]">
               <div className="flex flex-col items-start relative self-stretch w-full flex-[0_0_auto]">
                 <h1 className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-bold text-white text-2xl md:text-[35px] tracking-[0] leading-tight md:leading-[normal] text-center md:text-left">
@@ -27,7 +25,6 @@ export default function Home() {
                 </h2>
               </div>
 
-              {/* Feature list */}
               <ul className="flex flex-col items-start gap-3 md:gap-[13px] relative self-stretch w-full flex-[0_0_auto]">
                 {features.map((feature, index) => (
                   <li
@@ -64,26 +61,27 @@ export default function Home() {
 
             {/* Footer text */}
             <div className="flex flex-col items-center justify-center gap-3 relative self-stretch w-full flex-[0_0_auto]">
-              <p className="relative self-stretch mt-[-1.00px] [font-family:'Figtree',Helvetica] font-medium text-[#aaaaaa] text-xs tracking-[0] leading-[normal] text-center">
+              <p className="relative self-stretch mt-[-1.00px] [font-family:'Figtree',Helvetica] font-medium text-[#aaaaaa] text-xs tracking-[0] leading-[normal] text-start">
                 By clicking "Get Started", you agree with Terms and Conditions,
                 Privacy Policy, Subscription Terms
               </p>
-              <p className="relative self-stretch [font-family:'Figtree',Helvetica] font-medium text-[#aaaaaa] text-[10px] tracking-[0] leading-[normal] text-center">
+              <p className="relative self-stretch [font-family:'Figtree',Helvetica] font-medium text-[#aaaaaa] text-[10px] tracking-[0] leading-[normal] text-start">
                 Fametonic 2025 ©All Rights Reserved.
               </p>
             </div>
           </CardContent>
         </Card>
 
-        {/* Mobile app mockup image */}
-        <div className="relative w-full max-w-[400px] md:max-w-[666px] h-[300px] md:h-[679px] order-1 md:order-2 flex-shrink-0">
-          <Image
-            className="absolute inset-0 w-full h-full object-contain md:object-cover"
-            alt="Influe mobile mockup"
-            src={heroImage}
-          />
+        <div className="relative border border-white ">
+          <div className=" absolute w-[666px] h-[700px] -left-[44px] -top-6">
+            <Image
+              className=" w-full h-full object-contain md:object-cover"
+              alt="hero image"
+              src={heroImage}
+            />
+          </div>
         </div>
-      </div>
+      </section>
     </main>
   );
 }
