@@ -10,9 +10,9 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header>
+    <header className="z-20">
       <TopNavbar />
-      <nav className=" w-full mt-9 flex items-center justify-center ">
+      <nav className=" w-full mt-9 flex items-center justify-center z-10">
         <section className="container px-32">
           <div className="flex w-full items-start justify-between">
             <div className="h-[72px] w-auto">

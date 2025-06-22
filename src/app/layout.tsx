@@ -1,11 +1,19 @@
 import Navbar from "@/components/Navbar/Navbar";
 import { ThemeProvider } from "@/provider/theme-provider";
 import type { Metadata } from "next";
-import { Geist_Mono, Urbanist } from "next/font/google";
+import { Figtree, Geist_Mono, Nunito, Urbanist } from "next/font/google";
 import "./globals.css";
 
 const urbanistSans = Urbanist({
   variable: "--font-urbanist-sans",
+  subsets: ["latin"],
+});
+const nunitoSans = Nunito({
+  variable: "--font-nunito-sans",
+  subsets: ["latin"],
+});
+const figtreeSans = Figtree({
+  variable: "--font-figtree-sans",
   subsets: ["latin"],
 });
 
@@ -27,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${urbanistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${urbanistSans.variable} ${geistMono.variable} ${figtreeSans.variable} ${nunitoSans.variable} antialiased`}
       >
         <ThemeProvider
           attribute="class"

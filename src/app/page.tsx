@@ -13,39 +13,38 @@ export default function Home() {
   return (
     <main className="flex justify-center items-center w-full">
       <section className="container pl-context-padding flex">
-        <Card className="flex flex-col w-full md:w-[516px] items-start gap-8 md:gap-20 border-0 bg-transparent   mt-14 z-10">
-          <CardContent className="flex flex-col items-start gap-6 md:gap-[30px] relative self-stretch w-full flex-[0_0_auto] p-0">
-            <div className="flex flex-col items-start gap-4 relative self-stretch w-full flex-[0_0_auto]">
-              <div className="flex flex-col items-start relative self-stretch w-full flex-[0_0_auto]">
-                <h1 className="relative self-stretch mt-[-1.00px] [font-family:'Urbanist',Helvetica] font-bold text-white text-2xl md:text-[35px] tracking-[0] leading-tight md:leading-[normal] text-center md:text-left">
+        <Card className="flex flex-col w-full md:w-hero-content items-start gap-8 md:gap-20 border-0 bg-transparent mt-14 z-10">
+          <CardContent className="flex flex-col items-start gap-6 md:gap-8 self-stretch w-full p-0">
+            <section className="flex flex-col items-start gap-4 self-stretch w-full ">
+              <div className="flex flex-col items-start relative self-stretch w-full ">
+                <h1 className=" self-stretch  font-bold text-white text-2xl md:text-hero-size tracking-[0] leading-tight md:leading-[normal] text-center md:text-left">
                   Want to Turn Social Media Into a Profitable Career?
                 </h1>
-                <h2 className="relative self-stretch [text-shadow:0px_4px_4px_#fc004e] [font-family:'Urbanist',Helvetica] font-bold text-[#00e7f9] text-2xl md:text-[35px] tracking-[0] leading-tight md:leading-[normal] text-center md:text-left">
+                <h2 className="relative self-stretch text-shadow-hero  font-bold text-aqua text-2xl md:text-hero-size tracking-[0] leading-tight md:leading-[normal] text-center md:text-left">
                   Discover your way to success with Fametonic:
                 </h2>
               </div>
 
-              <ul className="flex flex-col items-start gap-3 md:gap-[13px] relative self-stretch w-full flex-[0_0_auto]">
+              <ul className="flex flex-col items-center gap-3 md:gap-3.5 relative self-stretch w-full ">
                 {features.map((feature, index) => (
                   <li
                     key={index}
-                    className="flex items-start gap-2.5 relative self-stretch w-full flex-[0_0_auto]"
+                    className="flex items-center gap-2.5 relative self-stretch w-full mt-1"
                   >
-                    <span className="mt-1 md:mt-[-1.00px] relative w-fit [font-family:'Nunito',Helvetica] font-medium text-white text-lg md:text-[22px] text-center tracking-[0] leading-[normal] whitespace-nowrap flex-shrink-0">
+                    <span className=" relative w-fit font-nunito font-medium text-white text-lg md:text-top-bar-size text-center tracking-[0] leading-[normal] whitespace-nowrap flex-shrink-0">
                       ✨
                     </span>
-                    <span className="relative flex-1 mt-[-1.00px] [font-family:'Figtree',Helvetica] font-semibold text-white text-sm md:text-base tracking-[0] leading-[20px] md:leading-[22px]">
+                    <span className="relative flex-1  font-figtree font-semibold text-white text-sm md:text-base tracking-[0] leading-5 md:leading-6">
                       {feature}
                     </span>
                   </li>
                 ))}
               </ul>
-            </div>
+            </section>
 
-            {/* CTA section */}
-            <div className="flex flex-col w-full md:w-[313px] items-start gap-2.5 relative flex-[0_0_auto]">
-              <Button className="flex items-center justify-center gap-2.5 px-8 md:px-10 py-3 md:py-2 relative self-stretch w-full flex-[0_0_auto] bg-[#fc004e] rounded-[10px] shadow-[2px_2px_10px_#00e7f9] hover:bg-[#e0004a] transition-colors">
-                <span className="relative w-fit [font-family:'Figtree',Helvetica] font-bold text-white text-lg md:text-xl tracking-[0] leading-[normal] whitespace-nowrap">
+            <div className="flex flex-col w-full md:w-[313px] items-start gap-2.5 ">
+              <Button className="flex items-center justify-center gap-2.5 px-8 md:px-10 py-3 md:py-2 relative self-stretch w-full  bg-top-bar-red rounded-[10px] shadow-[2px_2px_10px_#00e7f9] hover:bg-[#e0004a] transition-colors">
+                <span className="relative w-fit font-figtree font-bold text-white text-lg md:text-xl tracking-[0] leading-[normal] whitespace-nowrap">
                   GET STARTED
                 </span>
                 <Image
@@ -54,18 +53,17 @@ export default function Home() {
                   className="relative w-4 h-4 md:w-2 md:h-[13px]"
                 />
               </Button>
-              <p className="relative self-stretch [font-family:'Figtree',Helvetica] font-normal text-white text-xs text-center tracking-[0] leading-4">
+              <p className="relative self-stretch font-figtree font-normal text-white text-xs text-center tracking-[0] leading-4">
                 1-minute quiz for personalized Insights
               </p>
             </div>
 
-            {/* Footer text */}
-            <div className="flex flex-col items-center justify-center gap-3 relative self-stretch w-full flex-[0_0_auto]">
-              <p className="relative self-stretch mt-[-1.00px] [font-family:'Figtree',Helvetica] font-medium text-[#aaaaaa] text-xs tracking-[0] leading-[normal] text-start">
+            <div className="flex flex-col items-center justify-center gap-3 relative self-stretch w-full ">
+              <p className="relative self-stretch mt-[-1.00px] font-figtree font-medium text-[#aaaaaa] text-xs tracking-[0] leading-[normal] text-start">
                 By clicking "Get Started", you agree with Terms and Conditions,
                 Privacy Policy, Subscription Terms
               </p>
-              <p className="relative self-stretch [font-family:'Figtree',Helvetica] font-medium text-[#aaaaaa] text-[10px] tracking-[0] leading-[normal] text-start">
+              <p className="relative self-stretch font-figtree font-medium text-[#aaaaaa] text-[10px] tracking-[0] leading-[normal] text-start">
                 Fametonic 2025 ©All Rights Reserved.
               </p>
             </div>
@@ -73,7 +71,7 @@ export default function Home() {
         </Card>
 
         <div className="relative border border-white ">
-          <div className=" absolute w-[666px] h-[700px] -left-[44px] -top-6">
+          <div className=" absolute w-[660px] h-[750px] -left-[60px] -top-8    ">
             <Image
               className=" w-full h-full object-contain md:object-cover"
               alt="hero image"
