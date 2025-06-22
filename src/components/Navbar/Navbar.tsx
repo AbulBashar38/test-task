@@ -12,11 +12,13 @@ const Navbar = () => {
   return (
     <header className="z-20">
       <TopNavbar />
-      <nav className=" w-full mt-9 flex items-center justify-center z-10">
-        <section className="container px-32">
+      <nav className=" w-full mt-4 md:mt-9 flex items-center justify-center z-10">
+        <section className="container md:px-32">
           <div className="flex w-full items-start justify-between">
-            <div className="h-[72px] w-auto">
-              <Image src={logo} alt="logo" className="h-full w-full"></Image>
+            <div className="md:w-fit w-full md:block flex items-center justify-center">
+              <div className="md:h-[72px] md:w-auto w-28 h-auto">
+                <Image src={logo} alt="logo" className="h-full w-full"></Image>
+              </div>
             </div>
 
             <button

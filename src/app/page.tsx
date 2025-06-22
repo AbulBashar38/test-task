@@ -12,7 +12,7 @@ export default function Home() {
   ];
   return (
     <main className="flex justify-center items-center w-full">
-      <section className="container pl-context-padding flex">
+      <section className="container md:pl-context-padding flex flex-col-reverse md:flex-row">
         <Card className="flex flex-col w-full md:w-hero-content items-start gap-8 md:gap-20 border-0 bg-transparent mt-14 z-10">
           <CardContent className="flex flex-col items-start gap-6 md:gap-8 self-stretch w-full p-0">
             <section className="flex flex-col items-start gap-4 self-stretch w-full ">
@@ -70,8 +70,8 @@ export default function Home() {
           </CardContent>
         </Card>
 
-        <div className="relative border border-white ">
-          <div className=" absolute w-[660px] h-[750px] -left-[60px] -top-8    ">
+        <div className="relative ">
+          <div className=" md:absolute md:w-[660px] md:h-[750px] md:-left-[60px] md:-top-8    ">
             <Image
               className=" w-full h-full object-contain md:object-cover"
               alt="hero image"
