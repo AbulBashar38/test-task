@@ -11,7 +11,7 @@ export default function Home() {
     "Learn from expert-led courses designed for aspiring influencers",
   ];
   return (
-    <main className="flex justify-center items-center w-full">
+    <main className="flex justify-center items-center w-full max-w-screen overflow-hidden">
       <section className="container lg:pl-context-padding p-5 flex flex-col-reverse lg:flex-row">
         <Card className="flex flex-col w-full lg:w-hero-content items-start gap-8 lg:gap-20 border-0 bg-transparent lg:mt-14 z-10 p-0">
           <CardContent className="flex flex-col items-start gap-6 md:gap-8 self-stretch w-full p-0">

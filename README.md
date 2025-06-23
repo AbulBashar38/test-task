@@ -1,37 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Fametonic Frontend Test Task
+
+This project is a test task for a frontend development position. The goal is to create a responsive web page from a Figma design using Next.js, Tailwind CSS, and Shadcn UI.
+
+## Features
+
+- Responsive layout built with Next.js (App Router)
+- Styled using Tailwind CSS with custom theme support
+- Component-based architecture (Navbar, Button, Card, etc.)
+- Uses Shadcn UI for modern, accessible UI components
+- Next.js Image optimization
+- Custom fonts and color palette
+- Mobile-first and desktop-friendly design
+
+## Live Preview
+
+You can view the deployed project here: [https://test-task-seven-murex.vercel.app/](https://test-task-seven-murex.vercel.app/)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
+- Node.js (v18 or higher recommended)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+
+   ```sh
+   git clone https://github.com/AbulBashar38/test-task.git
+   cd test-task
+   ```
+
+2. Install dependencies:
+
+   ```sh
+   npm install
+   # or
+   yarn install
+   ```
+
+### Running the Development Server
+
+```sh
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the app in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `src/app/` — Next.js app directory (pages, layout, global styles)
+- `src/components/` — Reusable UI components (Navbar, Button, Card, etc.)
+- `src/assets/` — Images and icons
+- `src/constant/` — Constants used in the app
+- `src/lib/` — Utility functions
+- `src/provider/` — Providers (e.g., theme)
+- `src/type/` — TypeScript types
 
-## Learn More
+## Customization
 
-To learn more about Next.js, take a look at the following resources:
+- Colors and fonts are defined in `globals.css`.
+- To update the design, modify the components in `src/components/`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Notes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- This project is for demonstration and evaluation purposes only.
+- The design is based on a provided Figma file.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# test-task
+This project is for test and evaluation purposes only. Do not use in production.
