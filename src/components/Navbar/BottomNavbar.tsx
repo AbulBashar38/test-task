@@ -1,3 +1,4 @@
+"use client";
 import logo from "@/assets/images/logo.png";
 import { navbarItems } from "@/constant";
 import { MenuIcon } from "lucide-react";

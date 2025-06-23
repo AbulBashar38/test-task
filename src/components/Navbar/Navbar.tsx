@@ -1,5 +1,3 @@
-"use client";
-
 import BottomNavbar from "./BottomNavbar";
 import TopNavbar from "./TopNavbar";
 const Navbar = () => {
