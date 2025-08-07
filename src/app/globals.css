@@ -6,6 +6,8 @@
 @theme inline {
   --spacing-context-padding: 135px;
   --spacing-hero-content: 516px;
+  --spacing-200px: 200px;
+  --spacing-18: 4.5rem;
   --text-top-bar-size: 22px;
   --text-hero-size: 35px;
   --color-background: var(--background);

@@ -12,7 +12,7 @@ const BottomNavbar = () => {
       <section className="container md:px-32">
         <div className="flex w-full items-start justify-between">
           <div className="md:w-fit w-full md:block flex items-center justify-center">
-            <div className="md:h-[72px] md:w-auto w-28 h-auto">
+            <div className="md:h-18 md:w-auto w-28 h-auto">
               <Image src={logo} alt="logo" className="h-full w-full"></Image>
             </div>
           </div>
