@@ -1,4 +1,3 @@
-import Navbar from "@/components/Navbar/Navbar";
 import { ThemeProvider } from "@/provider/theme-provider";
 import type { Metadata } from "next";
 import { Figtree, Geist_Mono, Nunito, Urbanist } from "next/font/google";
@@ -43,7 +42,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar />
+          {/* <Navbar /> */}
           {children}
         </ThemeProvider>
       </body>
